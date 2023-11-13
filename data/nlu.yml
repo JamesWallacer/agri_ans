@@ -1,0 +1,221 @@
+version: "3.0"
+nlu:
+  - intent: goodbye
+    examples: |
+      - 拜拜
+      - 再见
+      - 拜
+      - 退出
+      - 结束
+      - Bye!
+  - intent: greet
+    examples: |
+      - 你好
+      - 您好
+      - Hello
+      - hello
+      - Hi
+      - hi
+      - 喂
+      - 在么
+  - intent: query_knowledge_base
+    examples: |
+      - 列出玉米[病害](object_type)
+      - 有什么玉米病虫害[论文](object_type)？
+      - [棉铃虫](insect)的[生活习性](attribute)？
+      - 有哪些有关玉米[病害](disease)的[作者](object_type)？
+      - 给我列一些玉米[虫害](insect)[论文](object_type)可以吗
+      - 给我列一些[病害](object_type)
+      - 给我列一些[虫害](object_type)吧
+      - 请问有哪些玉米[病害](object_type)？
+      - 给出所有你知道的玉米[病害](object_type)
+      - 可以给我[亚洲玉米螟](insect)的[图例]吗(attribute)
+      - 能给出[玉米立枯丝核菌根腐病](disease)的[图片](attribute)吗
+      - 给我列出[玉米叶螨的发生与防治](title)的[网址](attribute)
+      - [玉米黄呆蓟马](insect)的[形态特征](attribute)是什么啊？
+      - [玉米异跗萤叶甲](insect)有什么[生活习性](attribute)
+      - 请给出[玉米种子霉烂](disease)这个病的[症状](attribute)
+      - [玉米纹枯病拮抗内生细菌的筛选](title)出自哪个[期刊](attribute)
+      - [玉米褐斑病](disease)这个病的[简介](attribute)
+      - [刚才那个](mention)属于什么[期刊](attribute)
+      - [刚才那个](mention)的[作者](attribute)是谁
+      - [那个病害](mention)的[简介](attribute)是啥？
+      - [那个虫害](mention)的[简介](attribute)是啥？
+      - [第一个](mention)的[标题](attribute)是什么？
+      - [第一个](mention)的[关键字](attribute)是什么
+      - [玉米假黑粉病](disease)的[学名](attribute)？
+      - [玉米矮花叶病](disease)的[学名](attribute)是什么？
+      - [第一个](mention)的[防治方法](attribute)
+      - [玉米镰刀菌苗枯病](disease)的[发生规律](attribute)
+      - [玉米叶斑病](disease)有什么[防治方法](attribute)
+      - [玉米异跗萤叶甲](insect)的[发生规律](attribute)是什么呢
+      - [Cornstreakdwarf](scientificName)是[谁](attribute)的学名
+      - 你知道[玉米铁甲](insect)的[生活习性](attribute)是什么吗
+      - 请给出与[玉米蚜](insect)相关的[研究文献](object_type)
+      - [玉米矮花叶病](disease)的[别称](object_type)有哪些
+      - 请告诉我[如何防治](attribute)[玉米炭疽病](disease)
+      - 
+      - [玉米蚜](insect)的[危害作物](object_type)是哪些
+      - [高粱](crop)被哪些[虫子](object_type)危害
+      - [红麻](crop)的[害虫](object_type)是什么
+      - [亚洲玉米螟](insect)会对哪些[作物](object_type)造成危害
+      - [玉米异跗萤叶甲](insect)的[别名](object_type)有哪些？
+      - [黑龙江省玉米大斑病菌生理小种的研究](title)的[摘要](attribute)是什么
+      - [玉米地下害虫的发生规律及防治技术](title)的[作者](attribute)是谁
+      - [核桃皮·马齿苋和辣蓼草乙醇提取物对玉米蚜拒食活性的影响](title)这篇论文的[关键字](attribute)是什么
+      - [王振营](author)写过哪些关于玉米病虫害的[论文](object_type)
+      - [不同基因型玉米受HT-毒素胁迫后细胞内CaM的动态变化](title)这篇论文的[简介](attribute)
+      - [中国玉米灰斑病病原菌的鉴定及其基本特征研究](title)的[主要内容](attribute)
+      - 论文[利用生命表技术评价玉米品种‘京科968’及其亲本的抗螟性](title)的[网址](url)在哪里
+      - [性诱剂在河北省玉米主要害虫测报上的应用研究](title)发表在哪个[期刊](object_type)上
+      - [河北农业科技](periodical)杂志上发表过哪些关于玉米病虫害的[论文](object_type)
+      - [农民致富之友](periodical)杂志发表的关于玉米病虫害的[论文](object_type)有哪些
+      - 可以告诉我[玉米细菌性茎腐病](disease)的[发生规律](attribute)吗
+      - [玉米黄呆蓟马](disease)的[学名](attribute)
+      - [玉米斑枯病](disease)的[防治方法](attribute)
+      - [玉米青霉菌穗腐病](disease)[形态特征](attribute)
+      - [玉米花期不协调](disease)的[发生规律](attribute)
+      - [玉米枝孢菌穗腐病](disease)的[危害作物](attribute)
+      - [玉米异跗萤叶甲](insect)是哪些[作物](object_type)的虫害
+      - [亚洲玉米螟](disease)感染作物后的[症状](attribute)是什么
+      - [亚洲玉米螟](disease)的[形态特征](attribute)
+      - [玉米异跗萤叶甲](insect)的[图例]
+      - [玉米圆斑病](disease)的[研究文献](object_type)有哪些
+
+  - synonym: "1"
+    examples: |
+      - 第一个
+      - 第1个
+      - 首个
+  - synonym: "2"
+    examples: |
+      - 第二个
+      - 第2个
+  - synonym: "3"
+    examples: |
+      - 第三个
+      - 第3个
+  - synonym: "4"
+    examples: |
+      - 第四个
+      - 第4个
+  - synonym: "5"
+    examples: |
+      - 第五个
+      - 第5个
+  - synonym: "6"
+    examples: |
+      - 第六个
+      - 第6个
+  - synonym: "7"
+    examples: |
+      - 第七个
+      - 第7个
+  - synonym: "8"
+    examples: |
+      - 第八个
+      - 第8个
+  - synonym: "9"
+    examples: |
+      - 第九个
+      - 第9个
+  - synonym: "10"
+    examples: |
+      - 第十个
+      - 第10个
+  - synonym: LAST
+    examples: |
+      - 最后一个
+      - 最后那个
+      - 最后的
+  - synonym: crop
+    examples: |
+      - 作物
+      - 植物
+      - 危害作物
+  - synonym: title
+    examples: |
+      - 标题
+      - 题目
+      - 论文
+      - 研究文献
+  - synonym: author
+    examples: |
+      - 作者
+      - 谁
+      - 哪个人
+      - 哪个作者
+  - synonym: disease
+    examples: |
+      - 病害
+      - 病
+  - synonym: insect
+    examples: |
+      - 虫害
+      - 虫子
+      - 虫
+      - 害虫
+  - synonym: scientificName
+    examples: |
+      - 学名
+  - synonym: alternative
+    examples: |
+      - 别称
+      - 别名
+      - 其他名字
+  - synonym: treatment
+    examples: |
+      - 防治方法
+      - 预防方法
+      - 如何预防
+      - 防治策略
+      - 应对方法
+  - synonym: regularity
+    examples: |
+      - 发生规律
+      - 出现规律
+  - synonym: symptom
+    examples: |
+      - 症状
+      - 病征
+  - synonym: url
+    examples: |
+      - 链接
+      - 地址
+      - 论文链接
+      - 论文地址
+      - 论文下载
+      - 下载
+      - 找论文
+  - synonym: feature
+    examples: |
+      - 形态特征
+      - 样子
+      - 外观
+      - 形态
+  - synonym: periodical
+    examples: |
+      - 期刊
+      - 杂志
+      - 期刊名
+      - 杂志名
+  - synonym: lifestyle
+    examples: |
+      - 生活习性
+      - 习性
+  - synonym: abstract
+    examples: |
+      - 摘要
+      - 概要
+  - synonym: introduction
+    examples: |
+      - 引言
+      - 简介
+      - 介绍
+      - 主要内容
+  - synonym: image
+    examples: |
+      - 图例
+      - 图片
+      - 照片
+      - 图像

@@ -1,0 +1,183 @@
+version: "3.0"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+# TODO
+intents:
+  - goodbye
+  - greet
+  - query_knowledge_base:
+      use_entities: []
+  
+entities:
+  - button_name
+  - object_type
+  - mention
+  - attribute
+  - disease
+  - insect
+  - scientificName
+  - title
+  - url
+  - periodical
+  - symptom
+  - abstract
+  - treatment
+  - image
+  - keyword
+  - introduction
+  - alternative
+  - author
+  - regularity
+  - feature
+  - lifestyle
+  - crop
+
+slots:
+  attribute:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: attribute
+  knowledge_base_last_object:
+    type: any
+    mappings:
+      - type: custom
+  knowledge_base_last_object_type:
+    type: any
+    mappings:
+      - type: custom
+  knowledge_base_listed_objects:
+    type: any
+    mappings:
+      - type: custom
+  knowledge_base_objects:
+    type: any
+    mappings:
+      - type: custom
+  mention:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: mention
+  object_type:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: object_type
+  disease:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: disease
+  insect:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: insect
+  title:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: title
+  periodical:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: periodical
+  url:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: url
+  symptom:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: symptom
+  abstract:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: abstract
+  treatment:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: treatment
+  crop:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: crop
+  keyword:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: keyword
+  scientificName:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: scientificName
+  image:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: image
+  introduction:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: introduction
+  alternative:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: alternative
+  author:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: author
+  regularity:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: regularity
+  feature:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: feature
+  lifestyle:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: lifestyle
+
+# TODO
+responses:
+  utter_greet:
+    - text: 你好，我是 Smart, 一个可以利用知识图谱帮你查询玉米病虫害相关信息的机器人😀。
+      buttons:
+      - title: "列举玉米病害"
+        payload: "列举玉米病害"
+      - title: "列举玉米虫害"
+        payload: "列举玉米虫害"
+      - title: "列举玉米病虫害相关的论文"
+        payload: "列举玉米病虫害相关的论文"
+  utter_goodbye:
+    - text: 再见！
+  utter_default:
+    - text: 系统不明白您说的话
+  utter_ask_rephrase:
+    - text: 抱歉系统没能明白您的话，请您重新表述一次
+
+actions:
+  - action_response_query
+  - utter_goodbye
+  - utter_greet
+  - utter_default
+  - utter_ask_rephrase

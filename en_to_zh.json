@@ -1,0 +1,21 @@
+{
+    "disease": "病害",
+    "insect": "虫害",
+    "symptom": "症状",
+    "treatment": "防治方法",
+    "regularity": "发生规律",
+    "scientificName": "学名",
+    "title": "标题",
+    "feature": "形态特征",
+    "periodical": "期刊",
+    "lifestyle": "生活习性",
+    "abstract": "摘要",
+    "keyword": "关键字",
+    "author": "作者",
+    "introduction": "简介",
+    "image": "图例",
+    "url": "网址",
+    "alternative": "别称",
+    "crop": "作物"
+    
+}
